@@ -37,4 +37,8 @@ The participant recovered through visual cues, an expected touch that was missin
 | [Design opportunities](research/design-opportunities.md) | Four evidence-linked concepts and a proposed evaluation |
 | [Evidence and sources](evidence/README.md) | The source inventory, reporting decisions and aggregate cluster summaries |
 
-This portfolio presents aggregate findings, paraphrased field examples and research instruments. The original transcripts, chat logs, photos and consent paperwork stay with the original study materials.
+## Visual portfolio
+
+[View the interactive portfolio page](https://katherine0292.github.io/HCI-Research/portfolio/) (English and Chinese). It replays five incidents, shows the kit from draft to final, and links each claim to material from the study: the participant's field photos, the Spot Map, and the Miro affinity wall that takes 159 codes to 25 clusters and five themes. The source is in [`portfolio-src/`](portfolio-src/); `python3 make_data.py .. > data.json` then `python3 build.py` (run inside `portfolio-src/`) rebuilds `portfolio/index.html`.
+
+This portfolio presents aggregate findings, paraphrased field examples and research instruments. The participant's photos were taken and shared with consent, and the page also shows the blank consent form template. The original transcripts and chat logs stay with the original study materials.
