@@ -7,7 +7,7 @@ sys.path.insert(0, here)
 from copy_data import C
 
 edit_block = os.path.join(here, 'edit_block.html')
-out = os.path.join(here, '..', 'portfolio', 'index.html')
+out = os.path.join(here, '..', 'index.html')
 css = open(os.path.join(here, 'base.css'), encoding='utf-8').read()
 css += "\n" + open(os.path.join(here, 'extra.css'), encoding='utf-8').read()
 
