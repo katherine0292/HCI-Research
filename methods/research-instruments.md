@@ -2,7 +2,7 @@
 
 The guides below are edited English versions of the study instruments and omit participant-specific details.
 
-## Team interview guide
+## Interview guide
 
 Use a semi-structured conversation. Start with a recent, concrete departure and follow the participant's account through what they carried, where they put it, how they checked and what made them notice a problem.
 
@@ -34,7 +34,7 @@ Useful follow-ups include where the item was, whether the participant was holdin
 | **WeChat voice note** | When you have a quiet moment, send a short note about what you were doing, what interrupted you, what you first noticed and what happened next. The target was about 10–20 seconds. | Capture the sequence in the participant's words, including procedural slips with little to photograph. |
 | **Quick-reaction sticker** | If there is little time to explain, choose a reaction such as “a bit annoying,” “no big deal” or “startled.” You can add context later if you want. | Provide a low-effort record and a participant-defined sense of the incident's significance. |
 | **Reminder eraser** | Keep the eraser in a convenient place. Its prompt is a reminder to record something relevant when you have time. | Cue participation without requiring a change to a tool she uses for work. The planned keyring tag was replaced at handoff. |
-| **Spot Map** | Sketch the places you move through and mark where the items normally go. We can draw it together. | Establish a baseline for interpreting later reports about changed placement and location-based checks. |
+| **Spot Map** | Sketch the places you move through and mark where the items normally go. I'll sketch it with you. | Establish a baseline for interpreting later reports about changed placement and location-based checks. |
 
 ### Exit interview
 

@@ -1,22 +1,18 @@
 # When the Body Remembers
 
-**Team interview study · 15 participants · five independent coders · 356 code entries**
+**Interview study · 15 participants · 356 coded entries · 26 clusters · six themes**
 
 ## Research question
 
-How do people remember belongings when moving between everyday places? We examined how a person decides what to take, checks readiness to leave and notices a missing item. Prospective memory means remembering to carry out an intended action later. In this study, those intentions included taking an item when leaving or retrieving it after using it somewhere away from home.
-
-## My contribution
-
-My documented work includes two interview records and their coding sheets. The first case concerned a mobile worker who left a charger at a shared workspace after a conversation broke the packing sequence. The second concerned a worker who relied on fixed pocket positions and a tactile check for work keys. Together, the two coding sheets contain 54 entries, 32 in the first and 22 in the second.
-
-I used descriptive coding to capture the action or condition in each extract and analytic coding to explain its role in remembering or recovery. For example, in the charger case I distinguished the physical experience of reaching into an empty sleeve from the interpretation that a routine reach can become a detection cue. The other coders' interview work, the combined register, the clustering and the final synthesis are credited to the team.
+How do people remember belongings when moving between everyday places? I examined how people decide what to take, check that they are ready to leave and notice a missing item. Prospective memory means remembering to carry out an intended action later. In this study, those intentions included taking an item when leaving or retrieving it after using it somewhere away from home.
 
 ## Method
 
-The semi-structured guide covered everyday belongings, departure sequences, bodily checks, environmental cues and experiences of forgetting. Asking for a specific incident made it possible to reconstruct what happened before departure and what made the problem apparent. Follow-up questions addressed where the item was, what the participant's hands were doing and how the episode differed from their usual routine. See the [team interview guide](../methods/research-instruments.md#team-interview-guide).
+The semi-structured guide covered everyday belongings, departure sequences, bodily checks, environmental cues and experiences of forgetting. Asking for a specific incident made it possible to reconstruct what happened before departure and what made the problem apparent. Follow-up questions addressed where the item was, what the participant's hands were doing and how the episode differed from their usual routine. See the [interview guide](../methods/research-instruments.md#interview-guide).
 
-The team consolidated 356 code entries into 26 clusters, then reviewed them as six themes. The register preserved provisional and final assignments. During theme review, 17 entries changed theme when their clusters were kept together. The team used contributions from at least three coders as a criterion for carrying a cluster forward on its own. Two narrower clusters, learning through costly loss and relying on familiar people, were retained as supporting evidence within the consequences theme. Coder coverage records whose work contributed to a theme. Each participant count below is the number of distinct participants with at least one entry in that theme in the final register.
+Descriptive codes capture what someone did or experienced. Analytic codes capture how the action or condition might explain remembering or recovery. For example, a participant who left a charger behind noticed an empty sleeve while reaching into a bag. That reach supplied a sensory cue after departure, even though the participant was looking for something else.
+
+The analysis traced 356 coded entries through 26 clusters to six themes. The register keeps provisional and final assignments. During theme review, 17 entries changed theme to keep related material together in the same cluster. Accounts of learning through costly loss and relying on people at familiar venues informed the consequences theme. The participant counts below show how many distinct participants had at least one entry in each theme in the final register.
 
 ## Findings
 

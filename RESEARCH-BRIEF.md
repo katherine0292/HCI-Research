@@ -4,7 +4,7 @@
 
 **Prepared by** [@katherine0292](https://github.com/katherine0292)
 
-**Project type** Qualitative HCI research in an academic setting
+**Project type** Personal qualitative HCI research project in an academic setting
 
 I wrote this retrospective brief to capture the scope of the completed research and connect each objective to a portfolio artefact.
 
@@ -25,8 +25,8 @@ The project examines how people build those routines, what happens when a routin
 
 | Workstream | Research work | Portfolio deliverable |
 | --- | --- | --- |
-| Establish the baseline | Use the team's semi-structured guide to elicit examples of carried items, departure checks and specific failures. Code the documented interview cases descriptively and analytically. | [Interview study](research/interview-study.md) and [interview guide](methods/research-instruments.md#team-interview-guide) |
-| Synthesise across interviews | Trace code entries into clusters and themes. Examine where cases diverge, including successful packing during conversation and checks that survive hurry. | [Team findings](research/interview-study.md#findings) and [interview cluster summary](evidence/interview-clusters.csv) |
+| Establish the baseline | Use semi-structured interview accounts to examine what people carry, how they check and when they notice a missing item. Use descriptive and analytic codes to connect those accounts to recurring patterns. | [Interview study](research/interview-study.md) and [interview guide](methods/research-instruments.md#interview-guide) |
+| Synthesise across interviews | Trace 356 coded entries through 26 clusters and six themes. Examine where cases diverge, including successful packing during conversation and checks that survive hurry. | [Interview findings](research/interview-study.md#findings) and [interview cluster summary](evidence/interview-clusters.csv) |
 | Design the field probe | Use a familiar messaging channel and offer quick capture, fuller explanation and a one-time location map. Adapt the physical prompt based on participant feedback during handoff. | [Field protocol and probe kit](methods/research-instruments.md#field-probe-protocol) |
 | Deploy and debrief | Run introductory and exit interviews around a two-week deployment. Reconstruct incident sequences using probe records and walk through first cues, existing workarounds and missed reports. | [Field probe study](research/field-probe-study.md) and [incident examples](research/field-probe-study.md#selected-incidents) |
 | Interpret field material | Code the four source types separately, cluster the codes, review themes against the accounts, and document how the prompts and research process shaped the material. | [Field findings](research/field-probe-study.md#findings), [probe cluster summary](evidence/probe-clusters.csv) and [research limitations](research/field-probe-study.md#what-the-study-can-support) |
@@ -34,12 +34,11 @@ The project examines how people build those routines, what happens when a routin
 
 ## Participants and settings
 
-The team interviewed 15 adults about everyday transitions across home, work and shared spaces. The individual follow-up focused on one property manager who regularly carried keys and documents between an office, a car and property entrances. She was recruited by convenience sampling and was separate from the interview sample. Calls, conversations and overlapping work tasks made her routine an information-rich setting for examining interruption and recovery.
+The interview phase examined accounts from 15 adults about everyday transitions across home, work and shared spaces. For the field phase, I focused on one property manager who regularly carried keys and documents between an office, a car and property entrances. She was recruited by convenience sampling and was separate from the interview sample. Calls, conversations and overlapping work tasks made her routine an information-rich setting for examining interruption and recovery.
 
 ## Review criteria
 
 - A reviewer can trace the field question and kit choices to the interview findings.
-- Personal responsibilities are attributable, and the team findings retain their collective credit.
 - The analysis identifies what interrupted the routine, what the participant did next and what eventually signalled the problem.
 - Counts have a defined source and unit, and the write-up accounts for delayed reports, recreated scenes and researcher influence.
 - Each design hypothesis has an evidence trail and a proposed way to evaluate it. The completed scope is qualitative research and synthesis.

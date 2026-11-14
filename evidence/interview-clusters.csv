@@ -1,27 +1,27 @@
-cluster_id,cluster,theme_id,code_entries,distinct_coders,distinct_participants,role_in_synthesis
-C01,One container or named set,T1,23,5,13,Main cluster
-C02,Fixed spatial template,T1,21,5,11,Main cluster
-C03,Assigned locations on the body,T1,5,3,4,Main cluster
-C04,Tactile checking ritual,T3,8,4,6,Main cluster
-C05,Visual sweep of the space,T3,20,5,11,Main cluster
-C06,Mental checklist or instinct,T3,19,4,9,Main cluster
-C07,Weight sound or shape as a cue,T3,14,3,7,Main cluster
-C08,Felt absence before identification,T4,13,4,8,Main cluster
-C09,Detection at the point of need,T4,13,5,12,Main cluster
-C10,Checkpoints along the journey,T4,7,4,6,Main cluster
-C11,Items outside the usual container,T2,19,5,13,Main cluster
-C12,Items left where they charge,T2,9,3,4,Main cluster
-C13,Switching containers,T2,16,3,8,Main cluster
-C14,Items carried only for a specific occasion,T2,14,5,9,Main cluster
-C15,Hurry removes the check,T5,23,5,11,Main cluster
-C16,Interruption displaces the sequence,T5,25,5,13,Main cluster
-C17,Caring duties compete with the check,T5,12,3,4,Main cluster
-C18,Unpacking at home weakens the routine,T2,12,4,8,Main cluster
-C19,Low consequences make loss tolerable,T6,12,5,9,Main cluster
-C20,Consequences shape protection,T6,13,5,9,Main cluster
-C21,Habits formed after costly loss,T6,5,2,3,Supporting evidence
-C22,Reducing what is carried,T1,16,4,8,Main cluster
-C23,Few external cues,T4,12,4,10,Main cluster
-C24,Emotional stakes,T6,10,4,5,Main cluster
-C25,Familiar people as a safety net,T6,3,2,2,Supporting evidence
-C26,Mobility and carrying load,T5,12,3,8,Main cluster
+cluster_id,cluster,theme_id,code_entries,distinct_participants,role_in_synthesis
+C01,One container or named set,T1,23,13,Main cluster
+C02,Fixed spatial template,T1,21,11,Main cluster
+C03,Assigned locations on the body,T1,5,4,Main cluster
+C04,Tactile checking ritual,T3,8,6,Main cluster
+C05,Visual sweep of the space,T3,20,11,Main cluster
+C06,Mental checklist or instinct,T3,19,9,Main cluster
+C07,Weight sound or shape as a cue,T3,14,7,Main cluster
+C08,Felt absence before identification,T4,13,8,Main cluster
+C09,Detection at the point of need,T4,13,12,Main cluster
+C10,Checkpoints along the journey,T4,7,6,Main cluster
+C11,Items outside the usual container,T2,19,13,Main cluster
+C12,Items left where they charge,T2,9,4,Main cluster
+C13,Switching containers,T2,16,8,Main cluster
+C14,Items carried only for a specific occasion,T2,14,9,Main cluster
+C15,Hurry removes the check,T5,23,11,Main cluster
+C16,Interruption displaces the sequence,T5,25,13,Main cluster
+C17,Caring duties compete with the check,T5,12,4,Main cluster
+C18,Unpacking at home weakens the routine,T2,12,8,Main cluster
+C19,Low consequences make loss tolerable,T6,12,9,Main cluster
+C20,Consequences shape protection,T6,13,9,Main cluster
+C21,Habits formed after costly loss,T6,5,3,Supporting evidence
+C22,Reducing what is carried,T1,16,8,Main cluster
+C23,Few external cues,T4,12,10,Main cluster
+C24,Emotional stakes,T6,10,5,Main cluster
+C25,Familiar people as a safety net,T6,3,2,Supporting evidence
+C26,Mobility and carrying load,T5,12,8,Main cluster

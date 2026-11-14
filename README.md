@@ -1,6 +1,6 @@
 # Remembering in Motion
 
-**An HCI research case study on everyday memory, interruptions and task resumption**
+**A personal HCI research project on everyday memory, interruptions and task resumption**
 
 **Researcher** [@katherine0292](https://github.com/katherine0292) · **Context** Human-centred design research, 2026
 
@@ -8,16 +8,11 @@ A property manager put her keys beside the cup holder to take a call. When the c
 
 Those incidents revealed two different design problems. People can lose track of an object's temporary location or lose track of their progress through a task. I used a two-week field probe to follow those problems from the interruption to the moment the participant noticed and recovered.
 
-## My contribution
+## Research approach
 
-| Study | Scope | My contribution |
-| --- | --- | --- |
-| **When the Body Remembers** | Team interview study with 15 participants and five independent coders. The shared analysis produced 356 code entries, 26 clusters and six themes. | My documented interview work includes two participant records and 54 descriptive and analytic coding entries. The cross-participant findings are the team's work. |
-| **Interrupted Rituals** | Individual follow-up with one property manager over two weeks. Ten recorded incidents and four source types informed five findings. | I framed the follow-up question, designed and adapted the probe kit, ran the introductory and exit interviews, documented the field material, coded it in two passes, and wrote the research report and design implications. |
+I explored everyday remembering in two phases. **When the Body Remembers** examined how 15 participants carried belongings, checked that they were ready to leave and noticed omissions. The interview analysis contains **356 coded entries, 26 clusters and six themes**. **Interrupted Rituals** followed one property manager over two weeks. Ten recorded incidents helped me trace what interrupted a check, when she noticed a problem and how she recovered.
 
-## From interviews to the field
-
-The team interviews showed how people use bags, pockets, fixed locations and physical checks to remember belongings. They also showed that calls, conversations and time pressure can push a check out of the departure routine. I designed the follow-up to find out what would bring the interrupted action back to mind.
+The interview findings showed that bags, pockets and familiar locations can stand in for a list of belongings. A call or rush can displace the physical check that normally verifies that everything is ready. I used that finding to design the field probe around the next cue the participant encountered.
 
 ```mermaid
 flowchart LR
@@ -36,7 +31,7 @@ The participant recovered through visual cues, an expected touch that was missin
 | Document | What it covers |
 | --- | --- |
 | [Research brief](RESEARCH-BRIEF.md) | The retrospective brief, research questions, phase-by-phase scope and corresponding deliverables |
-| [Interview study](research/interview-study.md) | The interview method, six team findings, counterexamples and my documented contributions |
+| [Interview study](research/interview-study.md) | Semi-structured interviews, six themes and counterexamples that refined the field question |
 | [Field probe study](research/field-probe-study.md) | The two-week deployment, five findings, selected incidents and methodological limitations |
 | [Research instruments](methods/research-instruments.md) | Interview guides, the probe kit, field prompts and participant-facing safeguards |
 | [Design opportunities](research/design-opportunities.md) | Four evidence-linked concepts and a proposed evaluation |

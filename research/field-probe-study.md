@@ -1,6 +1,6 @@
 # Interrupted Rituals
 
-**Individual HCI study · two weeks in October 2026 · one property manager**
+**Field probe study · two weeks in October 2026 · one property manager**
 
 ## Research question
 
@@ -8,7 +8,7 @@ How does someone notice a forgotten or misplaced item after a call or conversati
 
 ## Research design and deployment
 
-I recruited a property manager who regularly prepared keys and paperwork while moving between an office, a car and property entrances. She already labelled key sets, used naming conventions for work contacts and checked labels again at the door. She was separate from the team interview sample.
+I recruited a property manager who regularly prepared keys and paperwork while moving between an office, a car and property entrances. She already labelled key sets, used naming conventions for work contacts and checked labels again at the door. She had not taken part in the earlier interviews.
 
 I began with a semi-structured interview about routines and near misses, then drew a Spot Map with the participant to record where keys, paperwork and the phone usually went in each setting. The initial kit design included a prompt attached to her keyring. She explained that another tag would get in the way, so I transferred the prompt to an eraser that could sit on her desk or travel in her bag.
 
