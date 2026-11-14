@@ -1,0 +1,26 @@
+cluster_id,cluster,theme_id,code_entries,source_types_represented,probe_record_codes,intro_interview_codes,exit_interview_codes,spot_map_codes
+C01,Interruption occurs during a check,T1,8,3,4,2,2,0
+C02,Brief placement outside the usual location,T1,8,3,6,0,1,1
+C03,Search starts in the expected place,T2,7,2,3,0,4,0
+C04,Fixed homes for belongings,T2,9,4,1,1,1,6
+C05,Uncertainty about the last completed step,T3,12,4,2,3,5,2
+C06,The task feels complete before the last step,T3,7,4,1,3,2,1
+C07,The bag signals readiness,T2,4,3,2,1,1,0
+C08,Detection by a chance glance,T4,9,2,4,0,5,0
+C09,Felt absence when the item is needed,T4,2,2,1,0,1,0
+C10,Planned check at the door,T4,8,4,1,1,3,3
+C11,Another person signals an omission,T4,3,3,1,1,1,0
+C12,No visible sign of the unfinished task,T3,4,2,1,0,3,0
+C13,Retracing the sequence to recall a placement,T2,3,2,1,0,2,0
+C14,Delay until a cue becomes available,T4,3,1,0,0,3,0
+C15,Similar items selected automatically,T1,8,4,2,3,1,2
+C16,Time pressure and people waiting,T5,5,2,0,4,0,1
+C17,Consequences shape perceived severity,T5,11,3,7,1,3,0
+C18,Personal memory aids,T5,5,1,0,5,0,0
+C19,A generic prompt creates a pause,T5,3,2,1,0,2,0
+C20,Immediate reactions and later explanations,Method notes,15,3,9,3,3,0
+C21,Keeping the probe separate from work tools,Method notes,5,3,1,3,1,0
+C22,Participation changes awareness,Method notes,5,1,0,0,5,0
+C23,Researcher influence on the record,Method notes,12,4,4,4,3,1
+C24,Participant request for a cue to resume,T5,1,1,0,0,1,0
+C25,Slips without a call,T1,2,2,1,0,1,0
