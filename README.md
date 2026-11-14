@@ -37,4 +37,4 @@ The participant recovered through visual cues, an expected touch that was missin
 | [Design opportunities](research/design-opportunities.md) | Four evidence-linked concepts and a proposed evaluation |
 | [Evidence and sources](evidence/README.md) | The source inventory, reporting decisions and aggregate cluster summaries |
 
-This private portfolio presents aggregate findings, paraphrased field examples and research instruments. The original transcripts, chat logs, photos and consent paperwork stay with the original study materials.
+This portfolio presents aggregate findings, paraphrased field examples and research instruments. The original transcripts, chat logs, photos and consent paperwork stay with the original study materials.
