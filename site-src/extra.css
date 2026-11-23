@@ -31,11 +31,11 @@
 html.zh .intro h1{font-size:clamp(20px,2.4vw,34px);letter-spacing:0;overflow-wrap:normal}
 .intro .wrap{container-type:inline-size}
 @supports (font-size:1cqi){
-  .intro h1{font-size:2.4cqi}
-  html.zh .intro h1{font-size:3.1cqi}
+  .intro h1{font-size:clamp(20px,2.4cqi,36px)}
+  html.zh .intro h1{font-size:clamp(20px,3.1cqi,34px)}
 }
 @media (max-width:760px){
-  .intro h1,html.zh .intro h1{font-size:20px;white-space:normal;text-wrap:pretty}
+  .intro h1,html.zh .intro h1{font-size:20px;white-space:normal;text-wrap:wrap}
 }
 .intro .sub{font-size:clamp(15.5px,1.3vw,18px);color:var(--ink-2);max-width:none;margin-top:14px}
 
@@ -74,7 +74,7 @@ html.zh .intro h1{font-size:clamp(20px,2.4vw,34px);letter-spacing:0;overflow-wra
 .kit b{display:block;font-weight:500;font-size:15px;margin-bottom:4px}
 .kit p{font-size:13px;color:var(--ink-2);line-height:1.5}
 .kit .hi{border-color:var(--acc);background:var(--acc-soft)}.kit .hi i{color:var(--acc-ink)}
-.callout{margin-top:18px;border-left:3px solid var(--acc);background:var(--acc-soft);border-radius:0 14px 14px 0;padding:16px 20px;font-size:15px;max-width:76ch}
+.callout{margin-top:18px;border-left:3px solid var(--acc);background:var(--acc-soft);border-radius:0 14px 14px 0;padding:16px 20px;font-size:15px}
 .bar{font-size:15px}.bar em{font-style:normal;color:var(--ink-2)}.bar .num{font-size:26px;font-weight:300;margin-right:6px}
 .dots10{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
 .dots10 i{width:30px;height:30px;border-radius:50%;border:2px dashed var(--line-2);transform:scale(0)}
@@ -107,7 +107,7 @@ html.zh .intro h1{font-size:clamp(20px,2.4vw,34px);letter-spacing:0;overflow-wra
 .cr b{font-weight:500;font-size:14px;text-align:right;font-variant-numeric:tabular-nums}
 .cr em{font-style:normal;font-size:12px;color:var(--ink-3);background:var(--paper-2);border-radius:99px;text-align:center;padding:2px 0}
 .cr.sup{opacity:.6}
-.exc{margin-top:36px;max-width:76ch}
+.exc{margin-top:36px}
 .exc p{font-size:16px;margin-bottom:8px}
 
 /* field probe */
@@ -122,7 +122,7 @@ html.zh .intro h1{font-size:clamp(20px,2.4vw,34px);letter-spacing:0;overflow-wra
 .finds>div{display:grid;grid-template-columns:84px minmax(0,1fr);gap:4px 24px;padding:20px 0;border-bottom:1px solid var(--line);align-items:start}
 .finds .e{grid-row:1/4;font-size:54px;font-weight:300;letter-spacing:-.05em;line-height:1;color:var(--ink)}
 .finds h3{font-size:18px;font-weight:500;line-height:1.35}
-.finds p{font-size:14.5px;color:var(--ink-2);max-width:62ch}
+.finds p{font-size:14.5px;color:var(--ink-2)}
 .finds i{display:block;height:6px;border-radius:3px;width:var(--w);background:var(--c);margin-top:8px;transform:scaleX(0);transform-origin:0 50%}
 .revealed .finds i{transform:none;transition:transform 1.2s var(--ease) .3s}
 .hm{margin-top:8px;font-size:13.5px}
@@ -132,7 +132,7 @@ html.zh .intro h1{font-size:clamp(20px,2.4vw,34px);letter-spacing:0;overflow-wra
 .hr.ht{grid-template-columns:1fr;margin-top:12px}.hh .sh{display:none}.hh b{font-weight:inherit}
 .ht span{display:flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;font-weight:600;color:var(--c)}
 .ht i{width:9px;height:9px;border-radius:50%;background:var(--c)}
-.hn{font-size:13.5px;color:var(--ink)}
+.hn{font-size:13.5px;color:var(--ink);overflow-wrap:anywhere}
 .hc{position:relative;height:28px;display:grid;place-items:center;font-size:12.5px;font-weight:500;font-variant-numeric:tabular-nums;color:var(--ink)}
 .hc::before{content:"";position:absolute;inset:0;border-radius:6px;background:var(--c);opacity:calc(.16 + var(--a)*.84)}
 .hc.z::before{opacity:.05}
@@ -155,7 +155,7 @@ html.zh .intro h1{font-size:clamp(20px,2.4vw,34px);letter-spacing:0;overflow-wra
 .docbox span.s{width:60%}
 .docbox em{position:absolute;left:10px;right:10px;bottom:10px;text-align:center;font-style:normal;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ok);border:1.5px solid var(--ok);border-radius:6px;padding:3px 0}
 .cues{margin-top:24px;border-radius:20px;padding:20px 24px;background:var(--acc-soft)}
-.cues p{margin-top:14px;font-size:15.5px;max-width:70ch}
+.cues p{margin-top:14px;font-size:15.5px}
 .cuechips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
 .cuechips span{border-radius:99px;padding:7px 14px;font-size:13.5px}
 .cuechips .on{background:var(--acc);color:#fff}
@@ -187,7 +187,7 @@ html.zh .intro h1{font-size:clamp(20px,2.4vw,34px);letter-spacing:0;overflow-wra
 .refs li{padding:9px 0;border-bottom:1px solid var(--line);font-size:14px}
 .refs a{color:var(--ink);text-decoration:none;background:linear-gradient(var(--acc),var(--acc)) 0 100%/0 1.5px no-repeat;transition:background-size .3s}
 .refs a:hover{background-size:100% 1.5px}
-.big{font-size:clamp(36px,7.4vw,112px);padding-bottom:.22em;line-height:1}
+.big{font-size:clamp(24px,7.4vw,112px);padding-bottom:.22em;line-height:1}
 
 @media (max-width:1100px){
   .kit{grid-template-columns:repeat(3,minmax(0,1fr))}
@@ -195,6 +195,7 @@ html.zh .intro h1{font-size:clamp(20px,2.4vw,34px);letter-spacing:0;overflow-wra
   .th{grid-template-columns:42px minmax(0,1fr)}.th .tb{grid-column:2}.th .tp{grid-column:2;max-width:200px}
 }
 @media (max-width:900px){
+  .hh .lg{display:none}.hh .sh{display:inline}
   .pipe{grid-template-columns:1fr;gap:0;margin-bottom:36px}
   .pipe::before{left:18px;right:auto;top:20px;bottom:20px;width:2px;height:auto;background:linear-gradient(180deg,transparent,var(--acc),var(--acc-2),var(--acc),transparent);background-size:100% 200%;animation:flowY 3.2s linear infinite}
   .ps{display:grid;grid-template-columns:38px minmax(0,1fr);gap:0 14px;padding-bottom:20px}
@@ -216,6 +217,7 @@ html.zh .intro h1{font-size:clamp(20px,2.4vw,34px);letter-spacing:0;overflow-wra
   .pic .mv,.p1 .pic::after,.pic .st.s3,.pipe::before,.ch3 i{animation:none!important}
   .dots10 i{transform:none;animation:none!important}
 }
+@media (max-width:360px){.top .in{gap:8px;padding-left:max(14px,env(safe-area-inset-left,0px));padding-right:max(14px,env(safe-area-inset-right,0px))}}
 
 /* ---------- evidence images ---------- */
 .fg{margin:0;min-width:0}
