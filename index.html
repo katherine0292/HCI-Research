@@ -193,9 +193,6 @@ figure{margin:0}
 .fig .z{position:absolute;right:10px;bottom:10px;font-size:11px;background:rgba(17,17,20,.75);color:#fff;border-radius:99px;padding:4px 9px}
 figcaption{font-size:13px;color:var(--ink-2);margin-top:10px}
 .dark figcaption{color:var(--dark-ink-2)}
-.lb{position:fixed;inset:0;z-index:99;background:rgba(10,10,12,.88);display:grid;place-items:center;padding:max(24px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) 24px max(16px,env(safe-area-inset-left,0px));animation:fd .3s var(--ease)}
-.lb img{max-height:88vh;width:auto;border-radius:12px;background:#fff}
-.lb button{position:absolute;top:max(18px,env(safe-area-inset-top,0px));right:max(18px,env(safe-area-inset-right,0px));background:#fff;color:#111;border-radius:99px;padding:8px 16px;font-size:13px}
 @keyframes fd{from{opacity:0}}
 .cut{border:1px solid var(--line);border-radius:var(--r);padding:22px;background:var(--paper);min-width:0}
 .cut h4{font-size:20px;font-weight:400;text-decoration:line-through;text-decoration-color:var(--acc);text-decoration-thickness:2px;margin-bottom:10px}
@@ -526,7 +523,8 @@ th,td{padding:11px 14px}
 .rail.hot li button{color:var(--ink-2)}
 .rail.hot li.near button{color:var(--ink)}
 /* menu: light, compact */
-.menu{background:color-mix(in srgb,var(--paper) 94%,transparent);color:var(--ink);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.menu{background:color-mix(in srgb,var(--paper) 94%,transparent);color:var(--ink);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);overflow-y:auto}
+.menu .mh,.menu ol{flex-shrink:0}
 .menu .mh button{border-color:var(--line-2)}
 .menu ol{margin:40px 0 auto;gap:4px;max-width:560px}
 .menu li button{font-size:clamp(18px,1.9vw,24px);font-weight:400;color:var(--ink-2);gap:16px;padding:6px 0}
@@ -957,9 +955,9 @@ html.zh .intro h1{font-size:clamp(20px,2.4vw,34px);letter-spacing:0;overflow-wra
 .fg figcaption{font-size:12.5px;line-height:1.4;color:var(--ink-2);margin-top:8px}
 .cmp{display:grid;gap:22px}
 .cp{display:grid;grid-template-columns:minmax(0,1fr) 34px minmax(0,1fr);gap:10px;align-items:center}
-.cp>i{font-style:normal;text-align:center;font-size:22px;color:var(--acc)}
+.cp>i{font-style:normal;text-align:center;font-size:22px;color:var(--acc);justify-self:center;pointer-events:none}
 .cp .port{display:flex;flex-direction:column;align-items:center}
-.cp .port img{width:auto;max-width:100%;max-height:330px}
+.cp .port img{width:auto;max-width:100%;height:330px;object-fit:contain}
 .cp .port figcaption{align-self:stretch}
 .wall{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
 .wall .fg{position:relative;overflow:hidden;border-radius:14px;aspect-ratio:4/3;background:#cfd3dc}
@@ -967,18 +965,19 @@ html.zh .intro h1{font-size:clamp(20px,2.4vw,34px);letter-spacing:0;overflow-wra
 .wall .fg:hover img{transform:scale(1.07);box-shadow:none}
 .wall .fg figcaption{position:absolute;left:0;right:0;bottom:0;margin:0;padding:30px 12px 10px;color:#fff;font-size:12px;background:linear-gradient(transparent,rgba(8,10,24,.82));pointer-events:none}
 .aw{display:grid;gap:14px;margin-top:14px}.aw.c2{grid-template-columns:repeat(2,minmax(0,1fr))}
-.cs .fg img{max-height:420px;width:auto;margin:0 auto}
+.cs .fg img{height:420px;width:auto;object-fit:contain;margin:0 auto}
 .lb{position:fixed;inset:0;z-index:9999;background:rgba(8,10,24,.94);display:flex;flex-direction:column;color:#fff}
 .lb[hidden]{display:none}
 .lb-box{flex:1;min-height:0;overflow:auto;display:flex;padding:56px 56px 8px}
 .lb-i{margin:auto;max-width:100%;max-height:100%;object-fit:contain;cursor:zoom-in;border-radius:6px}
 .lb-i.z{max-width:none;max-height:none;width:1500px;cursor:zoom-out;margin:0}
 .lb-c{margin:0;padding:10px 60px 18px;text-align:center;font-size:13px;color:rgba(255,255,255,.8)}
-.lb button{position:absolute;z-index:2;border:0;background:rgba(255,255,255,.14);color:#fff;width:42px;height:42px;border-radius:50%;font-size:24px;line-height:1;cursor:pointer}
+/* Positions belong to each control so next never covers the close button. */
+.lb button{position:absolute;z-index:2;display:grid;place-items:center;border:0;padding:0;background:rgba(255,255,255,.14);color:#fff;width:42px;height:42px;border-radius:50%;font-size:24px;line-height:1;cursor:pointer}
 .lb button:hover{background:rgba(255,255,255,.28)}
 .lb-x{top:12px;right:14px}.lb-p{left:10px;top:50%}.lb-n{right:10px;top:50%}
 @media (max-width:900px){.wall{grid-template-columns:repeat(2,minmax(0,1fr))}.aw.c2{grid-template-columns:1fr}}
-@media (max-width:760px){.cp{grid-template-columns:1fr;gap:6px}.cp>i{transform:rotate(90deg);font-size:18px}.cp .port img{max-height:300px}.lb-box{padding:56px 8px 8px}.lb-c{padding:8px 14px 16px}.lb-p,.lb-n{top:auto;bottom:70px}}
+@media (max-width:760px){.cp{grid-template-columns:1fr;gap:6px}.cp>i{transform:rotate(90deg);font-size:18px}.cp .port img{height:300px}.lb-box{padding:56px 8px 8px}.lb-c{padding:8px 14px 16px}.lb-p,.lb-n{top:auto;bottom:70px}}
 </style>
 </head><body>
 <header class="top" id="top">
@@ -1076,9 +1075,9 @@ html.zh .intro h1{font-size:clamp(20px,2.4vw,34px);letter-spacing:0;overflow-wra
       <p class="callout rv" data-k="ap.cal"></p>
       <span class="lbl k rv" style="margin-top:44px" data-k="ev.dr.k"></span>
       <div class="cmp rv">
-        <div class="cp"><figure class="fg "><img data-lb="kit" loading="lazy" decoding="async" src="img/draft-tag.jpg" alt=""><figcaption data-k="ev.d1a"></figcaption></figure><i>→</i><figure class="fg port"><img data-lb="kit" loading="lazy" decoding="async" src="img/photo05.jpg" alt=""><figcaption data-k="ev.d1b"></figcaption></figure></div>
-        <div class="cp"><figure class="fg "><img data-lb="kit" loading="lazy" decoding="async" src="img/draft-stickers.jpg" alt=""><figcaption data-k="ev.d2a"></figcaption></figure><i>→</i><figure class="fg port"><img data-lb="kit" loading="lazy" decoding="async" src="img/chat-stickers.jpg" alt=""><figcaption data-k="ev.d2b"></figcaption></figure></div>
-        <div class="cp"><figure class="fg "><img data-lb="kit" loading="lazy" decoding="async" src="img/draft-spot.jpg" alt=""><figcaption data-k="ev.d3a"></figcaption></figure><i>→</i><figure class="fg "><img data-lb="kit" loading="lazy" decoding="async" src="img/spotmap.jpg" alt=""><figcaption data-k="ev.d3b"></figcaption></figure></div>
+        <div class="cp"><figure class="fg "><img data-lb="kit" width="900" height="457" loading="lazy" decoding="async" src="img/draft-tag.jpg" alt=""><figcaption data-k="ev.d1a"></figcaption></figure><i>→</i><figure class="fg port"><img data-lb="kit" width="900" height="1200" loading="lazy" decoding="async" src="img/photo05.jpg" alt=""><figcaption data-k="ev.d1b"></figcaption></figure></div>
+        <div class="cp"><figure class="fg "><img data-lb="kit" width="900" height="435" loading="lazy" decoding="async" src="img/draft-stickers.jpg" alt=""><figcaption data-k="ev.d2a"></figcaption></figure><i>→</i><figure class="fg port"><img data-lb="kit" width="600" height="1305" loading="lazy" decoding="async" src="img/chat-stickers.jpg" alt=""><figcaption data-k="ev.d2b"></figcaption></figure></div>
+        <div class="cp"><figure class="fg "><img data-lb="kit" width="900" height="482" loading="lazy" decoding="async" src="img/draft-spot.jpg" alt=""><figcaption data-k="ev.d3a"></figcaption></figure><i>→</i><figure class="fg "><img data-lb="kit" width="1600" height="736" loading="lazy" decoding="async" src="img/spotmap.jpg" alt=""><figcaption data-k="ev.d3b"></figcaption></figure></div>
       </div>
       <p class="muted small rv" style="margin-top:12px" data-k="ev.dr.n"></p>
       <div class="g2 rv" style="margin-top:36px;align-items:start">
@@ -1138,15 +1137,15 @@ html.zh .intro h1{font-size:clamp(20px,2.4vw,34px);letter-spacing:0;overflow-wra
       <div class="card rv" style="margin-top:14px">
         <span class="lbl k" data-k="ev.wl.k"></span>
         <div class="wall">
-          <figure class="fg "><img data-lb="wall" loading="lazy" decoding="async" src="img/photo01.jpg" alt=""><figcaption data-k="ev.p1"></figcaption></figure>
-          <figure class="fg "><img data-lb="wall" loading="lazy" decoding="async" src="img/photo02.jpg" alt=""><figcaption data-k="ev.p2"></figcaption></figure>
-          <figure class="fg "><img data-lb="wall" loading="lazy" decoding="async" src="img/photo03.jpg" alt=""><figcaption data-k="ev.p3"></figcaption></figure>
-          <figure class="fg "><img data-lb="wall" loading="lazy" decoding="async" src="img/photo04.jpg" alt=""><figcaption data-k="ev.p4"></figcaption></figure>
-          <figure class="fg "><img data-lb="wall" loading="lazy" decoding="async" src="img/photo06.jpg" alt=""><figcaption data-k="ev.p5"></figcaption></figure>
-          <figure class="fg "><img data-lb="wall" loading="lazy" decoding="async" src="img/photo07.jpg" alt=""><figcaption data-k="ev.p6"></figcaption></figure>
-          <figure class="fg "><img data-lb="wall" loading="lazy" decoding="async" src="img/photo08.jpg" alt=""><figcaption data-k="ev.p7"></figcaption></figure>
-          <figure class="fg "><img data-lb="wall" loading="lazy" decoding="async" src="img/photo09.jpg" alt=""><figcaption data-k="ev.p8"></figcaption></figure>
-          <figure class="fg "><img data-lb="wall" loading="lazy" decoding="async" src="img/photo10.jpg" alt=""><figcaption data-k="ev.p9"></figcaption></figure>
+          <figure class="fg "><img data-lb="wall" width="1200" height="900" loading="lazy" decoding="async" src="img/photo01.jpg" alt=""><figcaption data-k="ev.p1"></figcaption></figure>
+          <figure class="fg "><img data-lb="wall" width="1200" height="900" loading="lazy" decoding="async" src="img/photo02.jpg" alt=""><figcaption data-k="ev.p2"></figcaption></figure>
+          <figure class="fg "><img data-lb="wall" width="1200" height="900" loading="lazy" decoding="async" src="img/photo03.jpg" alt=""><figcaption data-k="ev.p3"></figcaption></figure>
+          <figure class="fg "><img data-lb="wall" width="1200" height="900" loading="lazy" decoding="async" src="img/photo04.jpg" alt=""><figcaption data-k="ev.p4"></figcaption></figure>
+          <figure class="fg "><img data-lb="wall" width="1200" height="900" loading="lazy" decoding="async" src="img/photo06.jpg" alt=""><figcaption data-k="ev.p5"></figcaption></figure>
+          <figure class="fg "><img data-lb="wall" width="1200" height="900" loading="lazy" decoding="async" src="img/photo07.jpg" alt=""><figcaption data-k="ev.p6"></figcaption></figure>
+          <figure class="fg "><img data-lb="wall" width="1200" height="900" loading="lazy" decoding="async" src="img/photo08.jpg" alt=""><figcaption data-k="ev.p7"></figcaption></figure>
+          <figure class="fg "><img data-lb="wall" width="1200" height="900" loading="lazy" decoding="async" src="img/photo09.jpg" alt=""><figcaption data-k="ev.p8"></figcaption></figure>
+          <figure class="fg "><img data-lb="wall" width="1200" height="900" loading="lazy" decoding="async" src="img/photo10.jpg" alt=""><figcaption data-k="ev.p9"></figcaption></figure>
         </div>
         <p class="muted small" style="margin-top:12px" data-k="ev.wl.n"></p>
       </div>
@@ -1168,18 +1167,18 @@ html.zh .intro h1{font-size:clamp(20px,2.4vw,34px);letter-spacing:0;overflow-wra
         <span class="lbl k" data-k="ev.aw.k"></span>
         <div class="seg" id="aw-seg" role="tablist"><button type="button" role="tab" data-m="0" aria-pressed="true" data-k="ev.aw.t1"></button><button type="button" role="tab" data-m="1" aria-pressed="false" data-k="ev.aw.t2"></button><button type="button" role="tab" data-m="2" aria-pressed="false" data-k="ev.aw.t3"></button></div>
         <div class="awp" data-m="0"><p class="muted small" data-k="ev.aw.d1"></p><div class="aw c2">
-          <figure class="fg "><img data-lb="aw0" loading="lazy" decoding="async" src="img/aff-probe.jpg" alt=""><figcaption data-k="ev.a1"></figcaption></figure>
-          <figure class="fg "><img data-lb="aw0" loading="lazy" decoding="async" src="img/aff-intro.jpg" alt=""><figcaption data-k="ev.a2"></figcaption></figure>
-          <figure class="fg "><img data-lb="aw0" loading="lazy" decoding="async" src="img/aff-exit.jpg" alt=""><figcaption data-k="ev.a3"></figcaption></figure>
-          <figure class="fg "><img data-lb="aw0" loading="lazy" decoding="async" src="img/aff-spot.jpg" alt=""><figcaption data-k="ev.a4"></figcaption></figure>
+          <figure class="fg "><img data-lb="aw0" width="1700" height="1735" loading="lazy" decoding="async" src="img/aff-probe.jpg" alt=""><figcaption data-k="ev.a1"></figcaption></figure>
+          <figure class="fg "><img data-lb="aw0" width="1700" height="1275" loading="lazy" decoding="async" src="img/aff-intro.jpg" alt=""><figcaption data-k="ev.a2"></figcaption></figure>
+          <figure class="fg "><img data-lb="aw0" width="1700" height="1748" loading="lazy" decoding="async" src="img/aff-exit.jpg" alt=""><figcaption data-k="ev.a3"></figcaption></figure>
+          <figure class="fg "><img data-lb="aw0" width="1700" height="828" loading="lazy" decoding="async" src="img/aff-spot.jpg" alt=""><figcaption data-k="ev.a4"></figcaption></figure>
         </div></div>
         <div class="awp" data-m="1" hidden><p class="muted small" data-k="ev.aw.d2"></p><div class="aw">
-          <figure class="fg "><img data-lb="aw1" loading="lazy" decoding="async" src="img/aff-clusters.jpg" alt=""><figcaption data-k="ev.a5"></figcaption></figure>
+          <figure class="fg "><img data-lb="aw1" width="1700" height="1258" loading="lazy" decoding="async" src="img/aff-clusters.jpg" alt=""><figcaption data-k="ev.a5"></figcaption></figure>
         </div></div>
         <div class="awp" data-m="2" hidden><p class="muted small" data-k="ev.aw.d3"></p><div class="aw c2">
-          <figure class="fg "><img data-lb="aw2" loading="lazy" decoding="async" src="img/theme-map.jpg" alt=""><figcaption data-k="ev.a6"></figcaption></figure>
-          <figure class="fg "><img data-lb="aw2" loading="lazy" decoding="async" src="img/aff-t1.jpg" alt=""><figcaption data-k="ev.a7"></figcaption></figure>
-          <figure class="fg "><img data-lb="aw2" loading="lazy" decoding="async" src="img/aff-t2.jpg" alt=""><figcaption data-k="ev.a8"></figcaption></figure>
+          <figure class="fg "><img data-lb="aw2" width="1400" height="915" loading="lazy" decoding="async" src="img/theme-map.jpg" alt=""><figcaption data-k="ev.a6"></figcaption></figure>
+          <figure class="fg "><img data-lb="aw2" width="1700" height="1684" loading="lazy" decoding="async" src="img/aff-t1.jpg" alt=""><figcaption data-k="ev.a7"></figcaption></figure>
+          <figure class="fg "><img data-lb="aw2" width="1700" height="1609" loading="lazy" decoding="async" src="img/aff-t2.jpg" alt=""><figcaption data-k="ev.a8"></figcaption></figure>
         </div></div>
       </div>
     </div>
@@ -1255,7 +1254,7 @@ html.zh .intro h1{font-size:clamp(20px,2.4vw,34px);letter-spacing:0;overflow-wra
         <div><span class="r" data-k="rg.x4.r"></span><p class="a" data-k="rg.x4.a"></p><div class="ch3"><em data-k="rg.x4.c"></em><i>→</i><b data-k="rg.x4.i"></b></div></div>
       </div>
       <div class="g2 rv cs" style="margin-top:44px;align-items:center">
-        <figure class="fg "><img data-lb="cs" loading="lazy" decoding="async" src="img/consent.jpg" alt=""><figcaption data-k="ev.cs.c"></figcaption></figure>
+        <figure class="fg "><img data-lb="cs" width="1000" height="1003" loading="lazy" decoding="async" src="img/consent.jpg" alt=""><figcaption data-k="ev.cs.c"></figcaption></figure>
         <div><span class="lbl k" data-k="ev.cs.k"></span><p class="callout" data-k="ev.cs.d"></p></div>
       </div>
       <div class="g2 rv" style="margin-top:44px;align-items:start">
@@ -1293,7 +1292,7 @@ const gs=k=>{try{return localStorage.getItem(k)}catch(e){return null}},ss=(k,v)=
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const NAV=$$('section.ch').map((s,i)=>({id:s.id,k:s.dataset.nav,n:String(i+1).padStart(2,'0')}));
 
-function applyText(){$$('[data-k]').forEach(el=>{el.innerHTML=t(el.dataset.k)})}
+function applyText(){$$('[data-k]').forEach(el=>{el.innerHTML=t(el.dataset.k)});$$('img[data-lb]').forEach(el=>{const c=el.closest('figure').querySelector('figcaption');el.setAttribute('aria-label',(L==='en'?'Open image: ':'打开图片：')+c.textContent)})}
 function setLang(l){L=l;R.lang=l==='en'?'en':'zh-CN';R.classList.toggle('zh',l!=='en');$('#l-zh').setAttribute('aria-pressed',l!=='en');$('#l-en').setAttribute('aria-pressed',l==='en');ss('rim-lang',l);applyText();renderAll()}
 $('#l-zh').onclick=()=>setLang('zh');$('#l-en').onclick=()=>setLang('en');
 
@@ -1391,21 +1390,23 @@ $$('#aw-seg button').forEach(b=>b.onclick=()=>{const m=b.dataset.m;$$('#aw-seg b
 
 /* ---------- lightbox ---------- */
 (function(){
-  const lb=document.createElement('div');lb.className='lb';lb.hidden=true;
-  lb.innerHTML='<button class="lb-x" type="button">×</button><button class="lb-p" type="button">‹</button><button class="lb-n" type="button">›</button><div class="lb-box"><img class="lb-i" alt=""></div><p class="lb-c"></p>';
+  const lb=document.createElement('div');lb.className='lb';lb.hidden=true;lb.setAttribute('role','dialog');lb.setAttribute('aria-modal','true');lb.setAttribute('aria-label','Image viewer');
+  lb.innerHTML='<button class="lb-x" type="button" aria-label="Close image viewer">×</button><button class="lb-p" type="button" aria-label="Previous image">‹</button><button class="lb-n" type="button" aria-label="Next image">›</button><div class="lb-box"><img class="lb-i" alt=""></div><p class="lb-c"></p>';
   document.body.appendChild(lb);
-  const im=lb.querySelector('.lb-i'),cap=lb.querySelector('.lb-c'),box=lb.querySelector('.lb-box');let grp=[],gi=0;
+  const im=lb.querySelector('.lb-i'),cap=lb.querySelector('.lb-c'),box=lb.querySelector('.lb-box');let grp=[],gi=0,opener=null,overflow='';
   function show(){const s=grp[gi];im.classList.remove('z');box.scrollTo(0,0);im.src=s.src;const f=s.closest('figure'),c=f&&f.querySelector('figcaption');cap.textContent=(c?c.textContent:'')+(grp.length>1?'  ('+(gi+1)+'/'+grp.length+')':'');im.alt=c?c.textContent:'';
     lb.querySelector('.lb-p').style.visibility=lb.querySelector('.lb-n').style.visibility=grp.length>1?'visible':'hidden'}
-  function open(el){grp=[...document.querySelectorAll('img[data-lb="'+el.dataset.lb+'"]')].filter(x=>!x.closest('[hidden]'));gi=Math.max(0,grp.indexOf(el));lb.hidden=false;document.documentElement.style.overflow='hidden';show()}
-  function close(){lb.hidden=true;document.documentElement.style.overflow='';im.removeAttribute('src')}
+  function open(el){grp=[...document.querySelectorAll('img[data-lb]')].filter(x=>x.dataset.lb===el.dataset.lb&&!x.closest('[hidden]'));gi=Math.max(0,grp.indexOf(el));opener=el;overflow=R.style.overflow;lb.hidden=false;R.style.overflow='hidden';show();lb.querySelector('.lb-x').focus({preventScroll:true})}
+  function close(){if(lb.hidden)return;lb.hidden=true;R.style.overflow=overflow;im.removeAttribute('src');if(opener)opener.focus({preventScroll:true})}
+  $$('img[data-lb]').forEach(el=>{el.tabIndex=0;el.setAttribute('role','button');el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open(el)}})});
   document.addEventListener('click',e=>{const el=e.target.closest&&e.target.closest('img[data-lb]');if(el)open(el)});
   lb.querySelector('.lb-x').onclick=close;
   lb.querySelector('.lb-p').onclick=()=>{gi=(gi+grp.length-1)%grp.length;show()};
   lb.querySelector('.lb-n').onclick=()=>{gi=(gi+1)%grp.length;show()};
   im.onclick=()=>im.classList.toggle('z');
   box.onclick=e=>{if(e.target===box)close()};
-  document.addEventListener('keydown',e=>{if(lb.hidden)return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')lb.querySelector('.lb-p').click();if(e.key==='ArrowRight')lb.querySelector('.lb-n').click()});
+  document.addEventListener('keydown',e=>{if(lb.hidden)return;if(e.key==='Escape'){e.preventDefault();close()}if(e.key==='ArrowLeft'){e.preventDefault();lb.querySelector('.lb-p').click()}if(e.key==='ArrowRight'){e.preventDefault();lb.querySelector('.lb-n').click()}
+    if(e.key==='Tab'){const buttons=[...lb.querySelectorAll('button')].filter(b=>getComputedStyle(b).visibility!=='hidden');const at=buttons.indexOf(document.activeElement);e.preventDefault();buttons[(at+(e.shiftKey?-1:1)+buttons.length)%buttons.length].focus()}});
 })();
 
 /* copy email */

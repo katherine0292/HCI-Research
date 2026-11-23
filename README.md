@@ -46,3 +46,9 @@ The [Aura hero artwork](img/banner/remembering-in-motion-aura-v1.png) is 2172 ×
 Download the standalone [1920 × 1200 poster](img/banner/remembering-in-motion-1920x1200.png), recomposed in 8:5 with the title and caption included. Its [generation prompt](img/banner/prompt-1920x1200.txt) is included alongside the PNG.
 
 This portfolio presents aggregate findings, paraphrased field examples and research instruments. The participant's photos were taken and shared with consent, and the page also shows the blank consent form template. The original transcripts and chat logs stay with the original study materials.
+
+## Interaction checks
+
+With Node.js, Playwright and Google Chrome installed, run `node tests/interactions.cjs`. The check serves the built page locally and uses real pointer clicks at desktop and phone sizes, in both languages. It covers chapter navigation, menus, filters, tabs, photo groups, image zoom, close/previous/next controls, keyboard dismissal, email copying and reference links. It also checks that the last menu item remains reachable on a short landscape screen. Reference destinations are stubbed after the click; publisher availability is outside this check.
+
+Set `PLAYWRIGHT_MODULE` to use an existing Playwright module path, `BROWSER_CHANNEL` to select another installed Chrome/Chromium channel, or `BASE_URL` to check a deployed build.
