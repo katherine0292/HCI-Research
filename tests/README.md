@@ -18,7 +18,7 @@ BASE_URL=https://katherine0292.github.io/HCI-Research/ node tests/interactions.c
 
 The script starts a temporary local static server when `BASE_URL` is absent. It
 uses actual pointer clicks at 1440×900 and 390×844, in English and Chinese, to
-check rail/menu navigation, menu closing, replay chips, theme filters, analysis
+check rail/menu navigation, menu closing, theme filters, analysis
 and insight tabs, every photo, previous/next, zoom, image dismissal, email copy
 and all five reference links. It also checks image-viewer keyboard focus and
 Escape behavior, browser errors, image loading, separate click targets for

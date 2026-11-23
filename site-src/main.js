@@ -47,24 +47,6 @@ requestAnimationFrame(()=>$('.banner').classList.add('in'));
 /* counters */
 $$('[data-c]').forEach(b=>{if(RM)return;const o=new IntersectionObserver(es=>{if(!es[0].isIntersecting)return;o.disconnect();const n=+b.dataset.c,t0=performance.now();(function f(tm){const p=Math.min(1,(tm-t0)/1100);b.textContent=Math.round(n*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f)})(t0)},{threshold:.5});o.observe(b)});
 
-/* ---------- recorded incidents: replay in the question chapter ---------- */
-const INC=[{k:'i1',ty:1,ev:'P-05–P-09 · E-05–E-08'},{k:'i2',ty:1,ev:'P-11–P-14 · E-09–E-10'},{k:'i3',ty:1,ev:'P-16–P-19 · E-12–E-14'},{k:'i4',ty:2,ev:'P-31–P-34'},{k:'i5',ty:2,ev:'P-46–P-49 · E-33–E-36 · E-42'}];
-let rIdx=0,rTm=[];
-function renderReplay(i,animate){rIdx=i;const d=INC[i];rTm.forEach(clearTimeout);rTm=[];
-  $('#st-chips').innerHTML=INC.map((x,k)=>`<button type="button" role="tab" aria-selected="${k===i}" data-i="${k}">${t(x.k+'.n')}</button>`).join('');
-  $$('#st-chips button').forEach(b=>b.onclick=()=>renderReplay(+b.dataset.i,true));
-  $('#rp').innerHTML=`<div class="rp-top"><span class="ty t${d.ty}">${t('hs.ty'+d.ty)}</span><span class="rev"><i>${t('hs.ev')}</i> ${d.ev}</span></div>
-   <div class="rp-line"><i id="rp-fill"></i></div>
-   <div class="rp-row">
-    <div class="rn" data-n="0"><span class="rl">${t('hs.c1')}</span><p>${t(d.k+'.a')}</p></div>
-    <div class="rn" data-n="1"><span class="rl">${t('hs.c2')}</span><p>${t(d.k+'.b')}</p></div>
-    <div class="rn" data-n="2"><span class="rl">${t('hs.c3')}</span><p>${t(d.k+'.c')}</p></div>
-   </div>`;
-  const nodes=$$('#rp .rn'),fill=$('#rp-fill');
-  const show=n=>{nodes.forEach((x,k)=>x.classList.toggle('on',k<=n));fill.style.width=((n+1)/3*100)+'%'};
-  if(!animate||RM){show(2);return}
-  show(-1);[0,1,2].forEach(n=>rTm.push(setTimeout(()=>show(n),250+n*900)))}
-
 /* ---------- interview themes ---------- */
 const TCOL=['','#E0583F','#3C6EE0','#1FA37A','#D99A1E','#8A5AD6','#5B6B7B'];
 const TH=[[1,65,15],[2,70,14],[3,61,14],[4,45,15],[5,72,15],[6,43,14]];
@@ -126,7 +108,7 @@ $$('#aw-seg button').forEach(b=>b.onclick=()=>{const m=b.dataset.m;$$('#aw-seg b
 /* copy email */
 $('#copy').onclick=async function(){try{await navigator.clipboard.writeText($('#mail').textContent);this.textContent=t('ft.copied')}catch(e){const r=document.createRange();r.selectNodeContents($('#mail'));const s=getSelection();s.removeAllRanges();s.addRange(r)}};
 
-function renderAll(){buildNav();renderReplay(rIdx,false);renderThemes();renderClusters();renderHeat();renderInsight();if(curIdx>=0){const i=curIdx;curIdx=-2;setNow(i)}}
+function renderAll(){buildNav();renderThemes();renderClusters();renderHeat();renderInsight();if(curIdx>=0){const i=curIdx;curIdx=-2;setNow(i)}}
 setLang(gs('rim-lang')==='zh'?'zh':'en');onScroll();
 window.CU={COPY,lang:()=>L,rerender:()=>setLang(L)};
 })();

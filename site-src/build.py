@@ -17,7 +17,7 @@ js = open(os.path.join(here, 'main.js'), encoding='utf-8').read()
 # every static data-k must exist; every key must be used (carousel keys sc<N>. are built in JS)
 # keys used from JS
 dyn = [f'iv.c{i:02d}' for i in range(1, 27)] + [f'pc.c{i:02d}' for i in range(1, 26)] + [f'pf.t{i}' for i in range(0, 6)] + [f'iv.t{i}' for i in range(1, 7)]
-dyn += [f'i{n}.{x}' for n in range(1, 6) for x in 'nabc'] + ['hs.c1', 'hs.c2', 'hs.c3', 'hs.ty1', 'hs.ty2', 'hs.ev', 'iv.ex.all', 'in.a1', 'in.b1', 'in.a2', 'in.b2', 'in.cue1', 'in.cue2', 'in.cue3', 'in.cue4', 'in.cue5', 'in.cue6', 'in.cap1', 'in.cap2', 'fp.hm.th', 'fp.s1s', 'fp.s2s', 'fp.s3s', 'fp.s4s']
+dyn += ['iv.ex.all', 'in.a1', 'in.b1', 'in.a2', 'in.b2', 'in.cue1', 'in.cue2', 'in.cue3', 'in.cue4', 'in.cue5', 'in.cue6', 'in.cap1', 'in.cap2', 'fp.hm.th', 'fp.s1s', 'fp.s2s', 'fp.s3s', 'fp.s4s']
 for k in dyn:
     if k not in C: print('MISSING', k); sys.exit(1)
 JSKEYS = set(dyn)

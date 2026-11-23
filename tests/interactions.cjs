@@ -59,11 +59,6 @@ async function checkSite(browser, url, viewport) {
         await page.waitForFunction(id => Math.abs(document.getElementById(id).getBoundingClientRect().top - 64) < 3, id);
       }
     }
-    for (let i = 0; i < 5; i++) {
-      await click(page.locator(`#st-chips [data-i="${i}"]`));
-      assert.equal(await page.locator(`#st-chips [data-i="${i}"]`).getAttribute('aria-selected'), 'true');
-      assert.equal(await page.locator('#rp .rn').count(), 3);
-    }
     for (let theme = 0; theme <= 6; theme++) {
       await click(page.locator(`#iv-flt [data-n="${theme}"]`));
       assert.equal(await page.locator(`#iv-flt [data-n="${theme}"]`).getAttribute('aria-pressed'), 'true');
