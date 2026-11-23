@@ -248,9 +248,9 @@ html.zh .intro h1{font-size:clamp(20px,2.4vw,34px);letter-spacing:0;overflow-wra
 .fg figcaption{font-size:12.5px;line-height:1.4;color:var(--ink-2);margin-top:8px}
 .cmp{display:grid;gap:22px}
 .cp{display:grid;grid-template-columns:minmax(0,1fr) 34px minmax(0,1fr);gap:10px;align-items:center}
-.cp>i{font-style:normal;text-align:center;font-size:22px;color:var(--acc)}
+.cp>i{font-style:normal;text-align:center;font-size:22px;color:var(--acc);justify-self:center;pointer-events:none}
 .cp .port{display:flex;flex-direction:column;align-items:center}
-.cp .port img{width:auto;max-width:100%;max-height:330px}
+.cp .port img{width:auto;max-width:100%;height:330px;object-fit:contain}
 .cp .port figcaption{align-self:stretch}
 .wall{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
 .wall .fg{position:relative;overflow:hidden;border-radius:14px;aspect-ratio:4/3;background:#cfd3dc}
@@ -258,15 +258,16 @@ html.zh .intro h1{font-size:clamp(20px,2.4vw,34px);letter-spacing:0;overflow-wra
 .wall .fg:hover img{transform:scale(1.07);box-shadow:none}
 .wall .fg figcaption{position:absolute;left:0;right:0;bottom:0;margin:0;padding:30px 12px 10px;color:#fff;font-size:12px;background:linear-gradient(transparent,rgba(8,10,24,.82));pointer-events:none}
 .aw{display:grid;gap:14px;margin-top:14px}.aw.c2{grid-template-columns:repeat(2,minmax(0,1fr))}
-.cs .fg img{max-height:420px;width:auto;margin:0 auto}
+.cs .fg img{height:420px;width:auto;object-fit:contain;margin:0 auto}
 .lb{position:fixed;inset:0;z-index:9999;background:rgba(8,10,24,.94);display:flex;flex-direction:column;color:#fff}
 .lb[hidden]{display:none}
 .lb-box{flex:1;min-height:0;overflow:auto;display:flex;padding:56px 56px 8px}
 .lb-i{margin:auto;max-width:100%;max-height:100%;object-fit:contain;cursor:zoom-in;border-radius:6px}
 .lb-i.z{max-width:none;max-height:none;width:1500px;cursor:zoom-out;margin:0}
 .lb-c{margin:0;padding:10px 60px 18px;text-align:center;font-size:13px;color:rgba(255,255,255,.8)}
-.lb button{position:absolute;z-index:2;border:0;background:rgba(255,255,255,.14);color:#fff;width:42px;height:42px;border-radius:50%;font-size:24px;line-height:1;cursor:pointer}
+/* Positions belong to each control so next never covers the close button. */
+.lb button{position:absolute;z-index:2;display:grid;place-items:center;border:0;padding:0;background:rgba(255,255,255,.14);color:#fff;width:42px;height:42px;border-radius:50%;font-size:24px;line-height:1;cursor:pointer}
 .lb button:hover{background:rgba(255,255,255,.28)}
 .lb-x{top:12px;right:14px}.lb-p{left:10px;top:50%}.lb-n{right:10px;top:50%}
 @media (max-width:900px){.wall{grid-template-columns:repeat(2,minmax(0,1fr))}.aw.c2{grid-template-columns:1fr}}
-@media (max-width:760px){.cp{grid-template-columns:1fr;gap:6px}.cp>i{transform:rotate(90deg);font-size:18px}.cp .port img{max-height:300px}.lb-box{padding:56px 8px 8px}.lb-c{padding:8px 14px 16px}.lb-p,.lb-n{top:auto;bottom:70px}}
+@media (max-width:760px){.cp{grid-template-columns:1fr;gap:6px}.cp>i{transform:rotate(90deg);font-size:18px}.cp .port img{height:300px}.lb-box{padding:56px 8px 8px}.lb-c{padding:8px 14px 16px}.lb-p,.lb-n{top:auto;bottom:70px}}
