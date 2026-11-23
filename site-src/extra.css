@@ -247,3 +247,12 @@ html.zh .intro h1{font-size:clamp(20px,2.4vw,34px);letter-spacing:0;overflow-wra
 .lb-x{top:12px;right:14px}.lb-p{left:10px;top:50%}.lb-n{right:10px;top:50%}
 @media (max-width:900px){.wall{grid-template-columns:repeat(2,minmax(0,1fr))}.aw.c2{grid-template-columns:1fr}}
 @media (max-width:760px){.cp{grid-template-columns:1fr;gap:6px}.cp>i{transform:rotate(90deg);font-size:18px}.cp .port img{height:300px}.lb-box{padding:56px 8px 8px}.lb-c{padding:8px 14px 16px}.lb-p,.lb-n{top:auto;bottom:70px}}
+
+/* Compact chapter spacing while retaining the original research content. */
+section.ch{padding-block:clamp(36px,4vw,56px)}
+.blk{margin-top:clamp(28px,3vw,40px)}
+@media(max-width:760px){
+  section.ch{padding-block:28px}
+  section.ch .body>[style*="margin-top:44px"],
+  section.ch .body>[style*="margin-top:52px"]{margin-top:28px!important}
+}
