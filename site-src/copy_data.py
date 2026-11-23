@@ -9,6 +9,10 @@ C = {
 # ---- hero: incident replay
 "hs.k": ("人机交互研究 · 个人研究项目", "HCI research · personal project"),
 "hs.t1": ("Remembering", "Remembering"), "hs.t2": ("in Motion", "in Motion"),
+"poster.topic": ("日常记忆 · 打断 · 续接", "EVERYDAY MEMORY / INTERRUPTION / RESUMPTION"),
+"poster.tagline": ("一点线索，让思绪重新接续。", "A small cue. A way back."),
+"poster.note": ("从物品的位置，到未完成的下一步", "FROM WHERE WE LEFT IT, TO WHERE WE LEFT OFF"),
+"replay.title": ("五次打断，五条回来的线索", "Five interruptions. Five ways back."),
 "hs.hint": ("选一个事件。每个事件会回放：打断怎样改变了惯例，以及最先是什么让问题浮现。", "Pick an incident. Each one replays how an interruption changed the routine and what first revealed the problem."),
 "hs.c1": ("打断", "Interruption"), "hs.c2": ("发生了什么变化", "What changed"), "hs.c3": ("最先的线索 / 恢复", "First cue or recovery"),
 "hs.ty1": ("物品位置", "Item location"), "hs.ty2": ("任务进度", "Task progress"),

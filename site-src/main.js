@@ -47,7 +47,7 @@ requestAnimationFrame(()=>$('.banner').classList.add('in'));
 /* counters */
 $$('[data-c]').forEach(b=>{if(RM)return;const o=new IntersectionObserver(es=>{if(!es[0].isIntersecting)return;o.disconnect();const n=+b.dataset.c,t0=performance.now();(function f(tm){const p=Math.min(1,(tm-t0)/1100);b.textContent=Math.round(n*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f)})(t0)},{threshold:.5});o.observe(b)});
 
-/* ---------- hero: replay of five incidents ---------- */
+/* ---------- recorded incidents: replay in the question chapter ---------- */
 const INC=[{k:'i1',ty:1,ev:'P-05–P-09 · E-05–E-08'},{k:'i2',ty:1,ev:'P-11–P-14 · E-09–E-10'},{k:'i3',ty:1,ev:'P-16–P-19 · E-12–E-14'},{k:'i4',ty:2,ev:'P-31–P-34'},{k:'i5',ty:2,ev:'P-46–P-49 · E-33–E-36 · E-42'}];
 let rIdx=0,rTm=[];
 function renderReplay(i,animate){rIdx=i;const d=INC[i];rTm.forEach(clearTimeout);rTm=[];
