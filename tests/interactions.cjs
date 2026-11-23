@@ -59,6 +59,7 @@ async function checkSite(browser, url, viewport) {
         await page.waitForFunction(id => Math.abs(document.getElementById(id).getBoundingClientRect().top - 64) < 3, id);
       }
     }
+    for (const summary of await page.locator('details:not([open]) > summary').all()) await click(summary);
     for (let theme = 0; theme <= 6; theme++) {
       await click(page.locator(`#iv-flt [data-n="${theme}"]`));
       assert.equal(await page.locator(`#iv-flt [data-n="${theme}"]`).getAttribute('aria-pressed'), 'true');
@@ -165,8 +166,9 @@ async function checkSite(browser, url, viewport) {
     await motion.locator('#menu-open').click();
     await motion.locator('#menu-list li:last-child button').click();
     await motion.waitForFunction(() => Math.abs(document.getElementById('c-rigour').getBoundingClientRect().top - 64) < 3);
-    await motion.locator('#rail [data-go="c-approach"]').click();
-    await motion.waitForFunction(() => Math.abs(document.getElementById('c-approach').getBoundingClientRect().top - 64) < 3);
+    await motion.locator('#rail [data-go="c-probe"]').click();
+    await motion.waitForFunction(() => Math.abs(document.getElementById('c-probe').getBoundingClientRect().top - 64) < 3);
+    for (const summary of await motion.locator('details:not([open]) > summary').all()) await summary.click();
     await motion.locator('img[data-lb="kit"]').nth(1).click();
     await motion.locator('.lb-n').click();
     await motion.waitForFunction(() => document.querySelector('.lb-i').src.endsWith('/img/draft-stickers.jpg'));

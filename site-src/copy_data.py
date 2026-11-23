@@ -238,3 +238,48 @@ C = {
 'ev.cs.d': ('参与前签署：自愿参与、可随时退出、全程匿名，研究结束后销毁材料。', 'Signed before participation: voluntary, withdraw at any time, anonymised, materials destroyed when the study ends.'),
 'ev.cs.c': ('知情同意表模板', 'Participant information and consent form (template)'),
 }
+
+# Portfolio reading layer: detailed evidence remains available on demand.
+C.update({'edit.iv.title': ('访谈如何把问题收窄', 'How interviews narrowed the question'),
+ 'edit.iv.lede': ('15 位参与者的访谈形成 356 条编码、26 个聚类和六个主题。我用这些材料决定现场探针要追踪什么。',
+                  'Interviews with 15 participants produced 356 coded entries, 26 clusters and six '
+                  'themes. I used that material to decide what the field probe should follow.'),
+ 'edit.iv.finding': ('包、口袋和熟悉的位置可以代替物品清单。关键不只是“有没有打断”，而是打断是否占用了检查需要的手，或挤掉了下一个动作。',
+                     'Bags, pockets and familiar locations could stand in for a list. The useful '
+                     'question was whether an interruption occupied the hand needed for the check '
+                     'or displaced the next movement.'),
+ 'edit.iv.details': ('查看六个主题与 26 个聚类', 'Explore six themes and 26 clusters'),
+ 'edit.probe.lede': ('我跟随另一位参与者——物业经理——记录两周工作中的十个事件。八个发生在来电或对话之后；这些记录用于理解失误与恢复的过程。',
+                     'I followed a separate participant, a property manager, for two weeks and ten '
+                     'recorded incidents. Eight followed a call or conversation. The accounts '
+                     'helped trace breakdown and recovery.'),
+ 'edit.inc1.k': ('物品位置', 'Item location'),
+ 'edit.inc1.t': ('钥匙在杯架旁，寻找却从包开始', 'Keys by the cup holder; the search starts in the bag'),
+ 'edit.inc1.d': ('来电打断检查，她把钥匙暂放在杯架旁。惯常的位置没有变，临时位置却没有进入之后的寻找。',
+                 'A call interrupted the check and she set the keys beside the cup holder. Her '
+                 'usual search location stayed the same; the temporary placement did not.'),
+ 'edit.inc1.c': ('恢复线索：扫一眼车内，看到了钥匙。', 'Recovery cue: a glance across the car revealed the keys.'),
+ 'edit.inc2.k': ('任务进度', 'Task progress'),
+ 'edit.inc2.t': ('文件夹在手边，但不知道核对到哪里', 'The folder is present; the completed checks are unclear'),
+ 'edit.inc2.d': ('来电打断了地址和文件类型的核对。她记得打开过文件夹，却记不清哪些细节已经确认。',
+                 'A call interrupted the address and document-type check. She remembered opening '
+                 'the folder but could not tell which details she had verified.'),
+ 'edit.inc2.c': ('恢复动作：重新打开文件夹，从头核对。',
+                 'Recovery action: reopen the folder and repeat the check from the beginning.'),
+ 'edit.probe.kit': ('探针工具、迭代与记录数量', 'Probe kit, iteration and record counts'),
+ 'edit.probe.photos': ('查看现场照片', 'View the field photographs'),
+ 'edit.probe.analysis': ('查看五项发现、25 个聚类与分析墙',
+                         'Explore five findings, 25 clusters and the analysis wall'),
+ 'edit.ds.title': ('优先检验两个任务续接假设', 'Two task-resumption hypotheses to test first'),
+ 'edit.ds.lede': ('文件夹核对和已备好却未发出的账单，指向同一个缺口：物品看起来已经就绪，未完成的动作却不可见。',
+                  'The folder check and a prepared but unsent bill exposed a shared gap: the item '
+                  'looked ready while the unfinished action remained invisible.'),
+ 'edit.ds.next': ('下一步用有提示和无提示的可比场景，观察正确续接、漏掉的最后一步，以及从回来到做对第一步的时间。当前交付为定性研究和设计假设，尚未开发原型或测量效果。',
+                  'Next, compare scenarios with and without a cue: correct resumption, missed '
+                  'final actions and time from return to a correct action. The completed work is '
+                  'qualitative research and design hypotheses; no prototype or effect measurement '
+                  'was completed.'),
+ 'edit.ds.more': ('另两个有证据支撑的方向', 'Two further evidence-linked directions'),
+ 'edit.ds.evaluation': ('查看完整评估方案', 'View the full evaluation proposal'),
+ 'edit.rg.details': ('研究问题、编码示例、研究材料与参考文献',
+                     'Research questions, coding examples, study materials and references')})
