@@ -1,0 +1,18 @@
+Remembering in Motion — Standalone 1920 × 1200 poster
+Created using the built-in ImageGen tool, 2026-11-23.
+Reference: remembering-in-motion-aura-v1.png.
+The artwork was recomposed for 8:5 rather than cropped from the panoramic banner.
+Generated at 1586 × 992, then exported without cropping to exactly 1920 × 1200.
+Final file: remembering-in-motion-1920x1200.png.
+
+FINAL GENERATION PROMPT
+
+Use case: ads-marketing
+Asset type: finished standalone exhibition / portfolio poster, 1920 × 1200 px, aspect ratio exactly 8:5 landscape.
+Input image 1 is the existing Remembering in Motion banner artwork: preserve its material style, key, translucent ribbon, papers and palette. Recompose for the taller 8:5 canvas; DO NOT stretch or simply crop the 3:1 banner.
+Primary request: create a matching 1920 × 1200 poster version for the personal HCI project Remembering in Motion, about interruptions to everyday checks and the cues that help people resume. This must be a finished poster including clear typography.
+Scene: luminous Aura field in pale periwinkle, powder blue, soft lavender and warm apricot-pink, extremely fine paper grain. One beautiful brushed iridescent silver house key on the right half, tilted down-left. A translucent satin ribbon loops through its bow; a small break in its broad loop is reconnected by one fine warm glowing strand. Two or three thin translucent papers behind the key. Airy, elegant, physically rendered 3D editorial still-life, soft floating shadows; no new props.
+Composition: intentional 8:5 composition. Use generous top and bottom breathing room and an expressive curved ribbon occupying the additional height. Left 47 percent primarily reserved for typography. The whole key and complete ribbon should stay inside the frame. Do not make the subject tiny. The key visually anchors the center-right; leave enough clear space for title without overlap.
+Typography: dark deep indigo, large refined sans-serif word "Remembering" on one line on the left, then a slightly larger italic serif "in Motion" below it, visually matching the website's clean sans and Georgia-like italic pairing. Main title around vertical center. Small uppercase kicker top-left "HCI RESEARCH / EVERYDAY MEMORY". Restrained subtitle bottom-left "A small cue. A way back." Large type and all words must be accurate and readable; balanced optical spacing, clean editorial design.
+Text (verbatim): "Remembering", "in Motion", "HCI RESEARCH / EVERYDAY MEMORY", "A small cue. A way back."
+Constraints: exact 1920×1200 output, full bleed, no outer margin or border, no rounded frame. Preserve the original light Aura mood, do not darken the background. No extra text, numbers, UI cards, logos, watermarks, humans, hands or fake research charts. The creative metaphor is interruption and reconnection, not a medical or futuristic technology claim.

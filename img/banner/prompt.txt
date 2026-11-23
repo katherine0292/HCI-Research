@@ -1,0 +1,16 @@
+Remembering in Motion — Aura landscape artwork v1
+Generated with the built-in ImageGen tool, 2026-11-23.
+Artwork: remembering-in-motion-aura-v1.png, 2172 × 724 (3:1).
+Typography is rendered as live HTML in site-src/template.html.
+Size reference only: CircleU portfolio/index.html uses aspect-ratio:2172/724.
+
+FINAL GENERATION PROMPT
+
+Use case: stylized-concept
+Asset type: finished ultra-wide website hero artwork, 3:1 aspect ratio, requested 3000 x 1000 px.
+Primary request: a striking, sophisticated editorial art poster for "Remembering in Motion", an HCI research project about how everyday remembering is interrupted and how a visual cue helps someone resume. Create the background artwork ONLY; the website will add all lettering.
+Scene/backdrop: a continuous luminous aura gradient field, pale periwinkle, atmospheric electric blue, soft lavender, warm peach pink and a concentrated apricot glow, subtle printed fine grain. The far left 48 percent is quiet, light lavender and powder blue with no objects, reserved for large dark typography.
+Subject: on the right half, a sculptural, oversized real house key made of brushed pale chrome with iridescent blue and rose reflections. A translucent satin ribbon traces a looping orbit through the key's round bow; its broad loop has a small clearly visible interruption, then a fine luminous strand reconnects the two ends. Two or three very thin translucent paper sheets arc subtly behind the key to evoke an unfinished folder check. These are poetic still-life objects, never a UI.
+Style/medium: high-end experimental 3D editorial still life, physical materials, soft studio light, tactile and elegant, airy spatial composition, art-direction quality. Beautiful curved silhouettes and restrained optical blur at the edges, key itself sharply legible. Gentle long shadows floating over the gradient, no hard floor line.
+Composition/framing: extremely wide panoramic 3:1 canvas, full bleed, no rounded frame or outer margins. All important objects within x=53–94%, y=12–88%; leave entire left 48% uncluttered for live typography. The artwork must already be composed for 3:1, not a cropped square image.
+Constraints: no text, letters, numbers, labels, logos, watermark, humans, hands, planets, interface cards, dashboard, borders, mockup screens. No dark navy background. No generic sci-fi portal. Preserve the quiet light left side and creative material detail on right.

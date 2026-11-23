@@ -14,13 +14,12 @@
 
 <div class="sheet">
 
-<!-- hero: replay of five recorded incidents -->
-<section class="banner hstage" id="hero" aria-label="Remembering in Motion">
-  <span class="st-k" data-k="hs.k"></span>
-  <h2 class="st-w"><b class="w1" data-k="hs.t1"></b> <b class="w2" data-k="hs.t2"></b></h2>
-  <div class="st-chips" id="st-chips" role="tablist"></div>
-  <div class="rp" id="rp"></div>
-  <p class="st-hint" data-k="hs.hint"></p>
+<!-- Full-width 3:1 artwork; live lettering stays sharp at every viewport. -->
+<section class="banner memory-poster" id="hero" aria-label="Remembering in Motion">
+  <img class="poster-art" src="img/banner/remembering-in-motion-aura-v1.png" width="2172" height="724" alt="" fetchpriority="high" decoding="async">
+  <div class="poster-top"><span data-k="hs.k"></span><span class="poster-topic" data-k="poster.topic"></span></div>
+  <h2 class="poster-title"><span data-k="hs.t1">Remembering</span><em data-k="hs.t2">in Motion</em></h2>
+  <div class="poster-bottom"><p data-k="poster.tagline"></p><span data-k="poster.note"></span></div>
 </section>
 
 <!-- 01 overview -->
@@ -61,6 +60,12 @@
         <div><span class="n">02</span><b data-k="qs.r2.t"></b><p data-k="qs.r2.d"></p></div>
         <div><span class="n">03</span><b data-k="qs.r3.t"></b><p data-k="qs.r3.d"></p></div>
         <div><span class="n">04</span><b data-k="qs.r4.t"></b><p data-k="qs.r4.d"></p></div>
+      </div>
+      <div class="incident-replay rv" aria-label="Recorded incident replay">
+        <h3 class="replay-heading" data-k="replay.title"></h3>
+        <div class="st-chips" id="st-chips" role="tablist" aria-label="Recorded incidents"></div>
+        <div class="rp" id="rp"></div>
+        <p class="st-hint" data-k="hs.hint"></p>
       </div>
     </div>
   </div>
