@@ -6,28 +6,12 @@ C = {
 "nav.iv": ("访谈研究", "Interviews"), "nav.fp": ("现场探针", "Field probe"), "nav.in": ("洞察", "Insight"),
 "nav.ds": ("设计假设", "Hypotheses"), "nav.rg": ("严谨性", "Rigour"),
 
-# ---- hero: incident replay
+# ---- hero
 "hs.k": ("人机交互研究 · 个人研究项目", "HCI research · personal project"),
 "hs.t1": ("Remembering", "Remembering"), "hs.t2": ("in Motion", "in Motion"),
 "poster.topic": ("日常记忆 · 打断 · 续接", "EVERYDAY MEMORY / INTERRUPTION / RESUMPTION"),
 "poster.tagline": ("一点线索，让思绪重新接续。", "A small cue. A way back."),
 "poster.note": ("从物品的位置，到未完成的下一步", "FROM WHERE WE LEFT IT, TO WHERE WE LEFT OFF"),
-"replay.title": ("五次打断，五条回来的线索", "Five interruptions. Five ways back."),
-"hs.hint": ("选一个事件。每个事件会回放：打断怎样改变了惯例，以及最先是什么让问题浮现。", "Pick an incident. Each one replays how an interruption changed the routine and what first revealed the problem."),
-"hs.c1": ("打断", "Interruption"), "hs.c2": ("发生了什么变化", "What changed"), "hs.c3": ("最先的线索 / 恢复", "First cue or recovery"),
-"hs.ty1": ("物品位置", "Item location"), "hs.ty2": ("任务进度", "Task progress"),
-"hs.ev": ("证据编号", "Evidence"),
-"i1.n": ("杯架旁的钥匙", "Keys by the cup holder"), "i1.a": ("来电打断了对钥匙的检查。", "A call interrupts the key check."),
-"i1.b": ("钥匙被放在杯架旁，但照常先去包里找。", "The keys are set beside the cup holder, and the usual search starts in the bag."), "i1.c": ("扫一眼车内，看到了暂放的位置。", "A glance across the car exposes the temporary location."),
-"i2.n": ("打印机旁的文件夹", "Folder by the printer"), "i2.a": ("一个问题打断了准备工作。", "A question interrupts preparation."),
-"i2.b": ("拿起包之后，文件夹还留在打印机旁。", "The folder stays near the printer after the bag is picked up."), "i2.c": ("回去关打印机时，文件夹进入视线。", "Returning to turn off the printer brings the folder into view."),
-"i3.n": ("相似的钥匙串", "Similar key sets"), "i3.a": ("来电时她在整理钥匙。", "A call arrives while she sorts keys."),
-"i3.b": ("拿错了一串钥匙。", "The wrong set is selected."), "i3.c": ("开门前的标签检查拦下了这个错误。", "Her tag check before trying the door catches it."),
-"i4.n": ("核对文件夹", "Folder verification"), "i4.a": ("来电打断了地址和文件类型的核对。", "A call interrupts the address and document-type check."),
-"i4.b": ("文件夹在手边且没错，但她不确定自己核对了什么。", "The folder is present and correct, but she is unsure what she checked."), "i4.c": ("她重新打开，从头核对一遍。", "She reopens it and repeats the check from the beginning."),
-"i5.n": ("已备好的账单", "Prepared bill"), "i5.a": ("备好文件后她离开了座位。", "She steps away after preparing the paperwork."),
-"i5.b": ("她后来以为账单已经发出。", "She later believes the bill has been sent."), "i5.c": ("租户的消息让她去查邮件，发现漏发了。", "A tenant's message prompts her to check the email and find the missed send."),
-
 # ---- overview
 "hero.title": ("日常检查为什么会在被打断后失效，什么能帮人接着做下去", "Why everyday checks break after an interruption, and what helps people resume"),
 "hero.sub": ("一项分两阶段的人机交互研究：人们在被来电或对话打断时，如何记住物品和任务进度。",
